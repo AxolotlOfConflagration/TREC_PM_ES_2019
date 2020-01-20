@@ -143,7 +143,7 @@ class DocumentParser:
 
 
 if __name__ == "__main__":
-    # file_sink(unpack(download_files()), './results/xmls')
+    file_sink(unpack(download_files()), './results/xmls')
 
     parser = DocumentParser()
     parser.parse('results/xmls/pubmed20n0001.xml')
