@@ -37,4 +37,4 @@ Example in: `es_reader.py` file.
 
 ## Evaluating results with trec_eval
 
-Example in: `er_reader_trec_eval.py` file.
+Example in: `es_reader_trec_eval.py` file.
