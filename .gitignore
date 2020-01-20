@@ -5,9 +5,12 @@ __pycache__/
 
 **/.vscode/*
 **/results/*
+**/elasticsearch-7.5.1/*
+elastic*.gz
 
 # C extensions
 *.so
+
 
 # Distribution / packaging
 .Python
