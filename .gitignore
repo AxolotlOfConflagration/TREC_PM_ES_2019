@@ -7,6 +7,8 @@ __pycache__/
 **/results/*
 **/elasticsearch-7.5.1/*
 elastic*.gz
+**/trec_eval-9.0.7/*
+**/venv/*
 
 # C extensions
 *.so
