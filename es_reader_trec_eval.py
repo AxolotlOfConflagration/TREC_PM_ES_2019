@@ -16,18 +16,19 @@ raw_result = es.search(
 )
 
 ### Prepare files for trec_eval
-qrels_fp = ""
+qrels_fp = "data/qrels-treceval-abstracts-2018-v2.txt"
 treceval_fp = "trec_eval-9.0.7/trec_eval"
 
 result = {}
-result["melanoma_query"] = raw_result['hits']['hits']
+result["1"] = raw_result['hits']['hits']
 
 with NamedTemporaryFile(delete=False, mode='w') as tmp:
     tmp_fn = tmp.name
     for q_id, docs in sorted(result.items()):
         for i, doc in enumerate(docs):
-            tmp.write('{q_id} 0 {d_id} {i} {score:.5f} TREC_DEMO\n'.format( \
-                q_id=q_id, d_id=doc['_id'], i=i, score=doc['_score']))
+            row = '{q_id} 0 {d_id} {i} {score:.5f} TREC_DEMO\n'.format( \
+                q_id=q_id, d_id=doc['_id'], i=i, score=doc['_score'])
+            tmp.write(row)
 
 if not os.path.exists(treceval_fp):
     platform_name = platform.system()
