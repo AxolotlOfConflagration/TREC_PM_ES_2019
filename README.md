@@ -38,3 +38,6 @@ Example in: `es_reader.py` file.
 ## Evaluating results with trec_eval
 
 Example in: `es_reader_trec_eval.py` file.
+
+qrels for Trec Eval are in directory `data`. 
+These files are taken from official [Trec2018](https://trec.nist.gov/data/precmed2018.html) website.
