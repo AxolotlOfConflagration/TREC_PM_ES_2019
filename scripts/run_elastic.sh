@@ -1,0 +1,2 @@
+cd elasticsearch-*/
+./bin/elasticsearch
