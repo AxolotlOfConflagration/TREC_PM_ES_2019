@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ## Load bioCaddie data to ElasticSearch
 
-First download this file: [bioCaddie data](https://drive.google.com/open?id=1dnOAgOd_-IC2flZBXMJm0STPy9SATbd2) and unpack this in your system. The unpacked folder contains about 3.1 GB of data. You can have these files in any direcotry, but by default the script uses the directory `../docs/` when current woring directory in the project root directory. The `docs` should contain XML files with names like `1`,`2`, `3`,... and so on. 
+First download this file: [bioCaddie data](https://drive.google.com/open?id=1dnOAgOd_-IC2flZBXMJm0STPy9SATbd2) and unpack this in your system. The unpacked folder contains about 3.1 GB of data. You can have these files in any direcotry, but by default the script uses the directory `../docs/` (when current working directory is the project root directory). The `docs` should contain XML files with names like `1`,`2`, `3`,... and so on. 
 
 Now just run the Python script:
 ```bash
