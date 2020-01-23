@@ -10,6 +10,7 @@ __pycache__/
 elastic*.gz
 **/trec_eval-9.0.7/*
 **/venv/*
+**/data/*
 
 # C extensions
 *.so
