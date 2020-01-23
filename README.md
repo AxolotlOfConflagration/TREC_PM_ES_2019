@@ -63,6 +63,8 @@ python -B query_elastic.py -fn <filename>
 Perl script is used to evaluate results created with `query_elastic.py`.
 Qrels file is labeled data used in evaluation process: [qrels data](https://drive.google.com/file/d/1CVNmFd8olyNaHb8bCaYibBOnvxF2ZIqX/view?usp=sharing)
 
+`-q` flag will return distinct results for every query. 
+
 ```bash
 perl scripts/trec_eval.pl data/qrels results/query_results/default_results
 ```
